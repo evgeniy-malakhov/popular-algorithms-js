@@ -25,7 +25,7 @@ class MinHeap {
     }
 
     bubbleUp() {
-        let idx = this.heap[this.heap.length - 1];
+        let idx = this.heap.length - 1;
         while (idx > 0 && this.heap[this.getParentIndex(idx)] > this.heap[idx]) {
             this.swap(idx, this.getParentIndex(idx));
             idx = this.getParentIndex(idx);
